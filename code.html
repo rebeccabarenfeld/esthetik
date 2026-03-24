@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Serene Atelier | Professional Esthetics</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "background": "#faf9f6",
+              "on-primary-container": "#82585c",
+              "tertiary": "#675c58",
+              "on-error": "#ffffff",
+              "on-primary": "#ffffff",
+              "on-secondary": "#ffffff",
+              "secondary-container": "#fed488",
+              "secondary": "#775a19",
+              "on-secondary-fixed": "#261900",
+              "tertiary-fixed-dim": "#d2c4be",
+              "error-container": "#ffdad6",
+              "secondary-fixed-dim": "#e9c176",
+              "error": "#ba1a1a",
+              "primary-fixed-dim": "#eeb9bd",
+              "on-primary-fixed": "#301216",
+              "on-tertiary-container": "#6c615d",
+              "on-secondary-container": "#785a1a",
+              "on-tertiary-fixed-variant": "#4e4541",
+              "outline-variant": "#d2c3c0",
+              "surface-bright": "#faf9f6",
+              "tertiary-fixed": "#eedfda",
+              "on-primary-fixed-variant": "#623c40",
+              "surface-dim": "#dbdad7",
+              "surface-container-highest": "#e3e2e0",
+              "primary-container": "#ffd8da",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary": "#ffffff",
+              "inverse-on-surface": "#f2f1ee",
+              "surface-container-high": "#e9e8e5",
+              "surface-container": "#efeeeb",
+              "outline": "#807471",
+              "on-surface-variant": "#4f4542",
+              "primary-fixed": "#ffdadc",
+              "primary": "#7c5357",
+              "on-tertiary-fixed": "#211a17",
+              "tertiary-container": "#edded8",
+              "surface-container-low": "#f4f3f1",
+              "secondary-fixed": "#ffdea5",
+              "surface": "#faf9f6",
+              "on-error-container": "#93000a",
+              "surface-variant": "#e3e2e0",
+              "inverse-primary": "#eeb9bd",
+              "surface-tint": "#7c5357",
+              "on-secondary-fixed-variant": "#5d4201",
+              "inverse-surface": "#2f312f",
+              "on-background": "#1a1c1a",
+              "on-surface": "#1a1c1a"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+        h1, h2, h3 { font-family: 'Noto Serif', serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+        .glass-nav { background: rgba(250, 249, 246, 0.8); backdrop-filter: blur(20px); }
+        .hero-gradient { background: linear-gradient(45deg, #7c5357 0%, #eeb9bd 100%); }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-primary-container selection:text-primary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-stone-50/80 dark:bg-stone-900/80 backdrop-blur-xl">
+<div class="flex justify-between items-center w-full px-8 py-6 max-w-7xl mx-auto">
+<a class="text-xl font-serif tracking-tight text-rose-950 dark:text-rose-50" href="#">The Serene Atelier</a>
+<div class="hidden md:flex items-center space-x-10">
+<a class="text-rose-900 dark:text-rose-100 border-b-2 border-amber-700/30 pb-1 font-medium tracking-wide transition-colors duration-300" href="#experience">Experience</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium tracking-wide hover:text-rose-800 dark:hover:text-rose-200 transition-colors duration-300" href="#services">Services</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium tracking-wide hover:text-rose-800 dark:hover:text-rose-200 transition-colors duration-300" href="#results">Results</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium tracking-wide hover:text-rose-800 dark:hover:text-rose-200 transition-colors duration-300" href="#about">About</a>
+</div>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-full font-medium tracking-wide hover:opacity-90 transition-all duration-300 shadow-lg shadow-primary/10">
+                Book Now
+            </button>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative px-8 py-20 lg:py-32 max-w-7xl mx-auto overflow-hidden">
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+<div class="z-10">
+<span class="inline-block px-4 py-1.5 bg-primary-container text-on-primary-container rounded-full text-xs font-bold tracking-widest uppercase mb-8">Professional Esthetics</span>
+<h1 class="text-5xl lg:text-7xl font-headline text-on-surface leading-tight mb-8">
+                        Reveal Your <br/><span class="italic text-primary">Natural Glow</span>
+</h1>
+<p class="text-lg text-on-surface-variant max-w-lg mb-12 leading-relaxed">
+                        Experience bespoke skincare treatments designed to enhance your innate beauty and restore your skin's youthful vitality through clinical expertise and mindful care.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-6">
+<button class="hero-gradient text-on-primary px-10 py-5 rounded-full font-semibold text-lg hover:scale-105 transition-transform duration-300 shadow-xl shadow-primary/20">
+                            Book Your Appointment
+                        </button>
+<button class="px-10 py-5 rounded-full border border-outline-variant text-on-surface font-semibold text-lg hover:bg-surface-container transition-colors duration-300">
+                            View Treatments
+                        </button>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-700">
+<img alt="Facial treatment" class="w-full h-full object-cover" data-alt="Close-up of a serene woman receiving a luxurious facial treatment in a soft-lit spa environment with rose gold accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqFkK7mno0_JwXiZwCQRac6H3vQaWeZJB3o1qcCvd9OXib2SIhKjwGi75jYdk5qW8CVkip2mPzwCdVL7po-wsUvNNGpcNZg-1p0KXllLULwIrCWPrGHrNlMT3kg7XaUFvKOVFnH0oZzj0h1-Fn5YcJp_bW8MRWcSA2oaxmXq8IqZbFT2LKHMNBvz-Z-xipG_7NF1akavN0KWCoDlLJ04GzDqqYpDtpqOtBwObg9VmpI2re9MI_gIDtoJRw7pH2ayrym50JrwDvw6Q"/>
+</div>
+<div class="absolute -bottom-10 -left-10 bg-surface-container-lowest p-8 rounded-2xl shadow-xl max-w-[240px] hidden md:block border border-outline-variant/10">
+<div class="flex items-center gap-4 mb-3">
+<span class="material-symbols-outlined text-secondary text-3xl">verified</span>
+<p class="font-bold text-sm">Certified Expert</p>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">Personalized dermatology-grade skincare protocols for every skin type.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="bg-surface-container-low py-24 lg:py-40" id="about">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid lg:grid-cols-12 gap-16 items-center">
+<div class="lg:col-span-5 order-2 lg:order-1">
+<div class="relative group">
+<div class="absolute -inset-4 bg-primary/5 rounded-2xl -rotate-3 group-hover:rotate-0 transition-transform duration-500"></div>
+<img alt="The Esthetician" class="relative rounded-2xl w-full aspect-[3/4] object-cover shadow-lg" data-alt="Professional headshot of a smiling female esthetician in a white clinical coat, minimalist clean clinical background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOceKK1KK1RhyGzo26DMUNUGDLjMwDPmq4ikodaWo7do0vuMYYR6GiLkDAVbXi60SU08S4tjTF0jYVc320loVD5JanSNZwUpH6RhTLxKXxGru1jjBf6gR3witfyodSRQ2P7Ybrlhmr83HJ6JXz9U3kNS4Ww0TEtTcYfF9NG8Hrzs3xtfQPyknihf9tsxm1Ij07PvCa-TMZDw63WAkuvby1Ncjzsik-F8u96OkYKXbcUsHQmq1zof_eSK90cAK4fhn04b7-jmihTnc"/>
+</div>
+</div>
+<div class="lg:col-span-7 order-1 lg:order-2">
+<h2 class="text-4xl lg:text-5xl font-headline mb-8 text-on-surface">Artistry Meets <br/>Clinical Precision</h2>
+<div class="space-y-6 text-on-surface-variant text-lg leading-relaxed mb-12">
+<p>With over 12 years of dedicated practice in advanced esthetics, I believe that skincare is a harmonious blend of science and soul. My approach isn't just about surface-level changes; it's about building confidence from within.</p>
+<p>Certified by the International Dermal Institute and specialized in holistic facial rejuvenation, I create custom-tailored journeys for each client that visits my sanctuary.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-8 border-t border-outline-variant/30 pt-12">
+<div>
+<p class="text-3xl font-headline text-primary mb-1">12+</p>
+<p class="text-sm font-label uppercase tracking-widest opacity-70">Years Experience</p>
+</div>
+<div>
+<p class="text-3xl font-headline text-primary mb-1">15k+</p>
+<p class="text-sm font-label uppercase tracking-widest opacity-70">Treatments</p>
+</div>
+<div>
+<p class="text-3xl font-headline text-primary mb-1">98%</p>
+<p class="text-sm font-label uppercase tracking-widest opacity-70">Happy Clients</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section - Bento Style -->
+<section class="py-24 lg:py-40 bg-background" id="services">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-20">
+<h2 class="text-4xl lg:text-5xl font-headline mb-4">The Treatment Menu</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Curated skin solutions using world-class technologies and premium botanical ingredients.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-6 gap-6">
+<!-- Facial Treatments -->
+<div class="md:col-span-4 bg-surface-container rounded-2xl p-10 flex flex-col justify-between group hover:bg-primary-container transition-colors duration-500 overflow-hidden relative">
+<div class="z-10">
+<span class="material-symbols-outlined text-4xl text-primary mb-6">face</span>
+<h3 class="text-2xl font-bold mb-4">Facial treatments</h3>
+<p class="text-on-surface-variant max-w-sm">From hydration boosts to oxygen infusion, our facials are customized to your skin's immediate needs.</p>
+</div>
+<img alt="Facial tool" class="absolute -right-10 -bottom-10 w-64 h-64 object-cover rounded-full opacity-20 group-hover:opacity-40 transition-all duration-700 transform group-hover:scale-110" data-alt="Aesthetic arrangement of luxury glass skin serum bottles and a jade roller on a silk surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlMVUijDY3FpDllDc08aeq7bbEH9fwzPYpfWq6wPgqPq8gDR996z5B_xJUsJOCZQztBgAySpXayH_sNUP_78_6VmItIQ0jd85GtUM6XPHsQBkPo2HIZ3MZCGztkpea4eBYKl7qTy_cAI76MC96UeDpfaLj4WM9tVp08it8iDM5oA0oK5eGE6-jrL6LjxyKeqP6AfeAZJ9fIKFjZRj67zPnZX4846-o3qeAV5Mvg2bNabfByGkuKiH4BFrTzMfOhMRp_KuL3K7Dzmk"/>
+</div>
+<!-- Anti-aging -->
+<div class="md:col-span-2 bg-surface-container-low rounded-2xl p-10 flex flex-col border border-outline-variant/10 hover:shadow-xl transition-all duration-300">
+<span class="material-symbols-outlined text-4xl text-secondary mb-6">auto_awesome</span>
+<h3 class="text-2xl font-bold mb-4">Anti-aging</h3>
+<p class="text-on-surface-variant text-sm">Advanced collagen induction and radio-frequency therapy for timeless skin elasticity.</p>
+</div>
+<!-- Deep Cleansing -->
+<div class="md:col-span-2 bg-surface-container-low rounded-2xl p-10 flex flex-col border border-outline-variant/10 hover:shadow-xl transition-all duration-300">
+<span class="material-symbols-outlined text-4xl text-primary mb-6">clean_hands</span>
+<h3 class="text-2xl font-bold mb-4">Deep cleansing</h3>
+<p class="text-on-surface-variant text-sm">Medical-grade extraction and enzymatic exfoliation for a poreless, refined finish.</p>
+</div>
+<!-- Waxing -->
+<div class="md:col-span-2 bg-surface-container rounded-2xl p-10 flex flex-col group hover:bg-tertiary-fixed transition-colors duration-500">
+<span class="material-symbols-outlined text-4xl text-tertiary mb-6">waves</span>
+<h3 class="text-2xl font-bold mb-4">Waxing</h3>
+<p class="text-on-surface-variant text-sm">Gentle, hypoallergenic hard wax for smooth results on sensitive skin areas.</p>
+</div>
+<!-- Consult -->
+<div class="md:col-span-2 bg-surface-container-low rounded-2xl p-10 flex flex-col border border-outline-variant/10 hover:shadow-xl transition-all duration-300">
+<span class="material-symbols-outlined text-4xl text-secondary mb-6">forum</span>
+<h3 class="text-2xl font-bold mb-4">Consultation</h3>
+<p class="text-on-surface-variant text-sm">Full skin analysis and personalized home-care prescription for long-term health.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Me -->
+<section class="py-24 bg-surface-container">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid md:grid-cols-4 gap-12">
+<div class="text-center">
+<div class="w-16 h-16 bg-surface-container-lowest rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm">
+<span class="material-symbols-outlined text-primary text-2xl" data-weight="fill">verified_user</span>
+</div>
+<h4 class="font-bold mb-3">Certified Professional</h4>
+<p class="text-sm text-on-surface-variant">Expertise backed by elite certifications and continuous clinical training.</p>
+</div>
+<div class="text-center">
+<div class="w-16 h-16 bg-surface-container-lowest rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm">
+<span class="material-symbols-outlined text-primary text-2xl" data-weight="fill">favorite</span>
+</div>
+<h4 class="font-bold mb-3">Personalized Care</h4>
+<p class="text-sm text-on-surface-variant">Every treatment is uniquely adapted to your current skin health and goals.</p>
+</div>
+<div class="text-center">
+<div class="w-16 h-16 bg-surface-container-lowest rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm">
+<span class="material-symbols-outlined text-primary text-2xl" data-weight="fill">spa</span>
+</div>
+<h4 class="font-bold mb-3">High-Quality Products</h4>
+<p class="text-sm text-on-surface-variant">Using only the finest medical-grade and organic skincare formulations.</p>
+</div>
+<div class="text-center">
+<div class="w-16 h-16 bg-surface-container-lowest rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm">
+<span class="material-symbols-outlined text-primary text-2xl" data-weight="fill">health_and_safety</span>
+</div>
+<h4 class="font-bold mb-3">Superior Hygiene</h4>
+<p class="text-sm text-on-surface-variant">Hospital-grade sterilization protocols for your safety and peace of mind.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Experience / Gallery Section -->
+<section class="py-24 lg:py-40" id="experience">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-xl">
+<h2 class="text-4xl lg:text-5xl font-headline mb-6">The Atelier Atmosphere</h2>
+<p class="text-on-surface-variant">Step into a space where every detail is curated for your tranquility. From the soft linen to the calming scent of lavender, your journey starts the moment you arrive.</p>
+</div>
+<a class="text-primary font-bold flex items-center gap-2 group mb-2" href="#">
+                        View Full Gallery <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-[600px]">
+<div class="md:col-span-8 rounded-2xl overflow-hidden relative group">
+<img alt="Spa Interior" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" data-alt="Interior of a luxury minimalist spa room with beige walls, high-end massage table, and warm atmospheric lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeO4hGECGqaVt-eMdFXsyJu0vVL4FjEMhCi0Kdx_WVoH7rKA5BnCoQ9_z8_YWyDhCiLa7WwuCjaxIiLCsTrE64wClh8yVf8QqP8W1uO6Ps6yiOiCKBHtry6X9NSWQzQ-VaUl4jocu_E6dbKncFMkssR9lQmKa9kvAcm2_ukQiLqYXCGV3GW-XQbVNARDKqAKR-o2yvpprzDyMA-sUwGMmqbhpO7dDgu4UqxVXQcF8H_2HfnBLEx8FWstuxu4O4WkqzI3ThfcwjZS0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/40 to-transparent"></div>
+<div class="absolute bottom-8 left-8 text-on-primary">
+<p class="text-sm font-label uppercase tracking-widest">The Sanctuary</p>
+<h3 class="text-2xl font-headline">A Space for Repose</h3>
+</div>
+</div>
+<div class="md:col-span-4 grid grid-rows-2 gap-6">
+<div class="rounded-2xl overflow-hidden group">
+<img alt="Products" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" data-alt="Close up of organic spa products and stacked clean white towels with a small flower" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXy8aDR3oqVkU4xUbv70xkb0pCh_74cl7hCmC0BgtTBLljC_CZG8GxARU9wYrXqQMUKElTTkWSwY1pU3Pkq3-_aCHIio0pGgj2Nb1QKwt7U3eSIAxEf-lSrAsOs7-ZL1d3QwrbkdXsSZQL1cM5zsOA46agATR2j-tFNkqe3kjsJg2rUlaTxenV6xIRmaeExuZ_fxLF9GPHTm-2vhuHz9eelcWV2xFrPUaUryoRlZbX09noDoZ2pEEJIBASAwYaZQS_slEXdaHc8p4"/>
+</div>
+<div class="rounded-2xl overflow-hidden group">
+<img alt="Relaxation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" data-alt="Detail of a face mask being applied with a soft brush, focus on texture and skin glow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBN3qflNbTBI05CJn6agImBL-WFIYhnFWWX0D1kxIqvmP9F5zRnaKZV8QGxImNn5xUlcAw3Lvqb58A1C5a5cKRHeC9fWAMbWAx_-zJ6rmUvWDPa0R7iq0LLINVwh4p21p72lXcAEcwYbdCB-r1zhdflzbuHrOmmcPLeYoWzWDGa83j_hwgaSKtczw_nnHAaFhZltbS2kUlinvscUxmwGYKBpmETUyv8jbTkbB1kIgBZ91tcdtY4C0inxfG-Fvniz5AiardcWM9zCBc"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-24 bg-surface-container-low overflow-hidden">
+<div class="max-w-7xl mx-auto px-8 relative">
+<span class="material-symbols-outlined absolute -top-10 -left-4 text-primary/10 text-[15rem] leading-none select-none">format_quote</span>
+<div class="relative z-10">
+<h2 class="text-4xl font-headline text-center mb-20 italic">Voices of Serenity</h2>
+<div class="grid md:grid-cols-2 gap-12">
+<div class="bg-surface-container-lowest p-12 rounded-2xl shadow-sm border border-outline-variant/5">
+<div class="flex gap-1 text-secondary mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-xl italic text-on-surface leading-relaxed mb-8">"I have never felt more comfortable during a treatment. The attention to detail and the personalized advice for my sensitive skin has truly transformed my routine and my confidence."</p>
+<div>
+<p class="font-bold">Eleanor Vance</p>
+<p class="text-sm text-on-surface-variant">Loyal Client since 2021</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-12 rounded-2xl shadow-sm border border-outline-variant/5">
+<div class="flex gap-1 text-secondary mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-xl italic text-on-surface leading-relaxed mb-8">"The Serene Atelier is more than just a spa; it's a therapeutic experience. My skin has a glow that I haven't seen in years. Truly a master of her craft."</p>
+<div>
+<p class="font-bold">Julianne Moore</p>
+<p class="text-sm text-on-surface-variant">Regular Patient</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA & Contact -->
+<section class="py-24 lg:py-40" id="contact">
+<div class="max-w-7xl mx-auto px-8">
+<div class="bg-primary-container/20 rounded-3xl p-8 lg:p-20 flex flex-col lg:flex-row gap-16">
+<div class="lg:w-1/2">
+<h2 class="text-4xl lg:text-5xl font-headline mb-8">Take time for <span class="italic text-primary">yourself</span>.</h2>
+<p class="text-lg text-on-surface-variant mb-12">I'm here to answer any questions about your skin concerns. Reach out to schedule a consultation or learn more about our specific treatments.</p>
+<div class="space-y-8">
+<div class="flex items-center gap-6">
+<div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-primary">call</span>
+</div>
+<div>
+<p class="text-xs font-label uppercase tracking-widest opacity-60">Call Us</p>
+<p class="text-lg font-bold">+1 (555) 234-5678</p>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-primary">mail</span>
+</div>
+<div>
+<p class="text-xs font-label uppercase tracking-widest opacity-60">Email Us</p>
+<p class="text-lg font-bold">hello@sereneatelier.com</p>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-primary">location_on</span>
+</div>
+<div>
+<p class="text-xs font-label uppercase tracking-widest opacity-60">Visit Us</p>
+<p class="text-lg font-bold">1280 Luxury Row, Paris, France</p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:w-1/2 bg-surface-container-lowest p-10 rounded-2xl shadow-xl border border-outline-variant/5">
+<form class="space-y-6">
+<div class="grid md:grid-cols-2 gap-6">
+<div>
+<label class="block text-sm font-medium text-on-surface-variant mb-2">Full Name</label>
+<input class="w-full bg-surface-container-low border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary transition-all" placeholder="Jane Doe" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-on-surface-variant mb-2">Email Address</label>
+<input class="w-full bg-surface-container-low border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary transition-all" placeholder="jane@example.com" type="email"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-on-surface-variant mb-2">Inquiry Type</label>
+<select class="w-full bg-surface-container-low border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary transition-all">
+<option>General Inquiry</option>
+<option>Book a Treatment</option>
+<option>Consultation Request</option>
+</select>
+</div>
+<div>
+<label class="block text-sm font-medium text-on-surface-variant mb-2">Your Message</label>
+<textarea class="w-full bg-surface-container-low border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary transition-all" placeholder="How can I help your skin journey today?" rows="4"></textarea>
+</div>
+<button class="w-full hero-gradient text-on-primary font-bold py-4 rounded-full shadow-lg hover:opacity-90 transition-opacity" type="submit">
+                                Send Message
+                            </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-stone-100 dark:bg-stone-950 w-full py-20 px-8">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12">
+<div class="max-w-sm">
+<a class="text-lg font-serif text-rose-950 dark:text-rose-50 mb-6 block" href="#">The Serene Atelier</a>
+<p class="text-stone-500 text-sm leading-relaxed mb-8">A curated sanctuary dedicated to the intersection of luxury skincare and mindful wellness.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-colors duration-300" href="#">
+<span class="material-symbols-outlined text-xl">camera</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-colors duration-300" href="#">
+<span class="material-symbols-outlined text-xl">brand_family</span>
+</a>
+</div>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-16">
+<div class="flex flex-col gap-4">
+<h5 class="text-rose-900 dark:text-rose-200 font-bold text-sm tracking-widest uppercase mb-2">Explore</h5>
+<a class="text-stone-500 font-label text-xs tracking-[0.05em] hover:underline decoration-amber-700/50 underline-offset-4" href="#">Experience</a>
+<a class="text-stone-500 font-label text-xs tracking-[0.05em] hover:underline decoration-amber-700/50 underline-offset-4" href="#">Services</a>
+<a class="text-stone-500 font-label text-xs tracking-[0.05em] hover:underline decoration-amber-700/50 underline-offset-4" href="#">About</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="text-rose-900 dark:text-rose-200 font-bold text-sm tracking-widest uppercase mb-2">Connect</h5>
+<a class="text-stone-500 font-label text-xs tracking-[0.05em] hover:underline decoration-amber-700/50 underline-offset-4 italic" href="#">Instagram</a>
+<a class="text-stone-500 font-label text-xs tracking-[0.05em] hover:underline decoration-amber-700/50 underline-offset-4" href="#">Contact</a>
+<a class="text-stone-500 font-label text-xs tracking-[0.05em] hover:underline decoration-amber-700/50 underline-offset-4" href="#">Appointments</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="text-rose-900 dark:text-rose-200 font-bold text-sm tracking-widest uppercase mb-2">Legal</h5>
+<a class="text-stone-500 font-label text-xs tracking-[0.05em] hover:underline decoration-amber-700/50 underline-offset-4" href="#">Privacy Policy</a>
+<a class="text-stone-500 font-label text-xs tracking-[0.05em] hover:underline decoration-amber-700/50 underline-offset-4" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto pt-20 border-t border-outline-variant/10 text-center">
+<p class="text-stone-500 text-xs tracking-widest">© 2024 The Serene Atelier. All rights reserved.</p>
+</div>
+</footer>
+</body></html>
